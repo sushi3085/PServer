@@ -1,1 +1,1 @@
-web: gunicorn warning_bot:app –preload
+web: gunicorn riverBot.wsgi
