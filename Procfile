@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath riverBot riverBot.wsgi
+web: gunicorn warning_bot:app –preload
