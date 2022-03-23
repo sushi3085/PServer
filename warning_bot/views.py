@@ -40,4 +40,9 @@ def callback(request):
 @csrf_exempt
 def getTry(request):
     if request.method == 'GET':
-        return HttpResponse('ASD')
+        response = ""
+        for name, val in request.GET.items():
+            response += name + "  :  "
+            response += val
+            response += '<br>'
+        return HttpResponse('ASD<br>'+response)

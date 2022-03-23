@@ -19,5 +19,4 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('warning_bot/', include('warning_bot.urls')), #包含應用程式的網址
-    path('getTry/', include('warning_bot.urls')),
 ]

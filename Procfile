@@ -1,1 +1,1 @@
-web: gunicorn riverBot.wsgi
+web: django-admin manage.py
